@@ -55,7 +55,7 @@ class AppController extends GetxController {
       final Uri uri = Uri.parse('${ApiService.baseUrl}/api/User').replace(
         queryParameters: {
           if (searchQuery.isNotEmpty) 'search': searchQuery,
-          'take':"10",
+          'take':"100",
 
         },
       );
